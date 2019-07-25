@@ -80,12 +80,66 @@
 					<section>
 						<h1>Performance improvements</h1>
 					</section>
+					<section>
+					    <pre><code class="hljs" data-trim contenteditable>
+								nvm use $NODE_VERSION
+								express app-$NODE_VERSION
+								cd app-$NODE_VERSION
+								npm install
+								npm start
+
+								artillery quick -r 200 -d 0 http://localhost:3000
+						</code></pre>
+					</section>
+					<section>
+						<h2>v8.16.0</h2>
+							<pre><code class="hljs" data-trim contenteditable>
+									Request latency:
+									min: 1.5
+									max: 22.7
+									median: 1.8
+									p95: 4.9
+									p99: 9.3
+							</code></pre>	
+					</section>
+					<section>
+							<h2>v10.16.0</h2>
+								<pre><code class="hljs" data-trim contenteditable>
+									Request latency:
+									min: 1.4
+									max: 21.4
+									median: 1.6
+									p95: 3.5
+									p99: 5.8									
+								</code></pre>	
+					</section>
+					<section>
+						<h2>v12.7.0</h2>
+							<pre><code class="hljs" data-trim contenteditable>
+									Request latency:
+									min: 1.3
+									max: 20.9
+									median: 1.6
+									p95: 3.6
+									p99: 6.6
+	      					</code></pre>	
+					</section>
+					<section>
+						<img src="https://benchmarking.nodejs.org/charts/startup_footprint.png"></img>
+						<a href="https://benchmarking.nodejs.org">https://benchmarking.nodejs.org</a>
+					</section>
 				</section>
 		
 		
 				<section>
 					<section>
 						<h1>ECMAScript module support</h1>
+					</section>
+					<section>
+						<img src="https://miro.medium.com/max/700/1*ax3AGfyJhlDWiBDMXYBv7Q.png"></img>
+					</section>
+					<section>
+						<h2>node --experimental-modules</h2>
 					</section>
 				</section>
 		
@@ -94,12 +148,30 @@
 					<section>
 						<h1>Experimental diagnostic report</h1>
 					</section>
+					<section>
+						<h2>node --experimental-report</h2>
+					</section>
 				</section>
 		
 		
 				<section>
 					<section>
 						<h1>What's next</h1>
+					</section>
+					<section>
+						<h2>It's stable</h2>
+						<ul>
+							<li>https://foundation.nodejs.org/</li>
+							<li>https://openjsf.org</li>
+							<li>Node.js Everywhere, the official Node.js Monthly Newsletter</li>
+						</ul>
+					</section>
+					<section>
+						<h2>deno</h2>
+						<ul>
+							<li>https://deno.land/</li>
+							<li>https://github.com/denoland/deno</li>
+						</ul>
 					</section>
 				</section>
 		
